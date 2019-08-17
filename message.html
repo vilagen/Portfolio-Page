@@ -34,7 +34,7 @@
     </nav>
 
 
-    <div class ="container border d-flex justify-content-between align-items-center my-3 bg-secondary">
+    <div class ="container border d-flex justify-content-between align-items-center my-3 bgLightGray">
         <h1 class="display-4" style="margin-left: 20%">Contact Me</h1>
         <div class="card bg-info" id="contentCard" style="width: 18rem; margin-right: 20px">
             <div class="card-header bg-light my-2">My Content:</div>
@@ -43,7 +43,31 @@
         </div>    
     </div>
 
-    <div class="container">
+    <div class="container border bgLightGray">
+
+        <form class="mt-3">
+
+            <div class="form-group">
+                <label for="userName"><h5>Your Name</h5></label>
+                <input type="name" class="form-control" id="eName">
+            </div>
+
+            <div class="form-group">
+                <label for="emailAddress"><h5>Email Address</h5></label>
+                <input type="email" class="form-control" id="eMail">
+            </div>
+
+            <div class="form-group">
+                <label for="userMessage"><h5>Message</h5></label>
+                <textarea class="form-control" id="eMessage" rows="3"></textarea>
+            </div>
+
+            <div class="d-flex flex-row-reverse">
+            <button type="submit" class="btn btn-primary border" id="eSubmit">Submit</button>
+            </div>
+
+        </form>
+
 
     </div>
 
@@ -54,4 +78,18 @@
     </footer>  
 
 </body>
+
+<script>
+function sendMail() {
+    var link = "mailto:davhart85@gmail.com"
+                + "?cc=" + document.getElementById("eMail").value
+                + "&subject=" + encodeURIComponent("Profile Email")
+                + "&body=" + encodeURIComponent("Hello, my name is " + document.getElementById("eName").value + ". \n" + document.getElementById("eMessage").value);
+
+                window.location.href = link;
+                }
+
+                document.getElementById("eSubmit").setAttribute("onclick", "sendMail()")
+</script>
+
 </html>

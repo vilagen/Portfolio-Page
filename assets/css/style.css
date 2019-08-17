@@ -29,3 +29,7 @@ body {
 #bioText {
     font-size: 20px
 }
+
+.bgLightGray {
+    background-color: lightgray
+}
