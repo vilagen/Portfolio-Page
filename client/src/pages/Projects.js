@@ -33,7 +33,8 @@ class Projects extends Component {
 						src="/photos/friendfinder.PNG"
 						alt="Friend Finder"
 						/>
-						</a>
+						</a
+						>
 							<div></div>
 							<Carousel.Caption>
 								<h3>Friend Finder</h3>
