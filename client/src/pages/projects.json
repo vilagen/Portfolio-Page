@@ -1,0 +1,48 @@
+[
+  {
+		"id": 1,
+		"href": "https://guarded-wildwood-51320.herokuapp.com/",
+		"photo": "/photos/friendfinder.PNG",
+		"alt": "Friend Finder",
+		"title": "Friend Finder",
+		"description": "A website to rate how compatible you are based on a quiz",
+		"description2": "This project was done to start to learn how to use both a back and frontend. This was also my first time learning about how routing API's work as well, thus beginning my learning on CRUD."
+	},
+
+	{
+		"id": 2,
+		"href": "https://musicluster.herokuapp.com/",
+		"photo": "/photos/musiCluster.PNG",
+		"alt": "MusiCluster",
+		"title": "MusiCluster",
+		"description": "A team full stack project. Make a profile create your own list of albums.",
+		"description2": "A group project using full stack development. Using login authentication (Passport), users find music albums, save it to their profile (POST) and then can see what albums they have saved in their profile (GET)."
+	},
+
+	{
+		"id": 1,
+		"href": "https://guarded-wildwood-51320.herokuapp.com/",
+		"photo": "/photos/friendfinder.PNG",
+		"alt": "News Scrapper",
+		"title": "Friend Finder",
+		"description": "A website to rate how compatible you are based on a quiz"
+	},
+
+	{
+		"id": 1,
+		"href": "https://guarded-wildwood-51320.herokuapp.com/",
+		"photo": "/photos/friendfinder.PNG",
+		"alt": "Google Books",
+		"title": "Friend Finder",
+		"description": "A website to rate how compatible you are based on a quiz"
+	},
+
+	{
+		"id": 1,
+		"href": "https://guarded-wildwood-51320.herokuapp.com/",
+		"photo": "/photos/friendfinder.PNG",
+		"alt": "Duck Link",
+		"title": "Friend Finder",
+		"description": "A website to rate how compatible you are based on a quiz"
+	}
+]

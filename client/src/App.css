@@ -1,0 +1,10 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 100px;
+  background-image: url("/photos/colorful-pattern.jpg");
+  background-size: 100% 100%
+}
