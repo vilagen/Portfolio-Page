@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Carousel } from "react-bootstrap";
 import Nav from "../components/Navbar";
 import Title from "../components/Title";
-import Carous from "../components/Carousel";
+import { ProjectList, CarouselListItem } from "../components/Carousel";
 import projects from "./projects.json";
 import "./style.css"
 
@@ -26,46 +26,56 @@ class Projects extends Component {
 
 					<Carousel className="bg-dark">
 
-						<Carousel.Item>
-						<a href="https://guarded-wildwood-51320.herokuapp.com/">
-						<img
-						className="d-block slidePic"
-						src="/photos/friendfinder.PNG"
-						alt="Friend Finder"
-						/>
-						</a
-						>
-							<div></div>
-							<Carousel.Caption>
-								<h3>Friend Finder</h3>
-								<p>A website to rate how compatible you are based on a quiz</p>
-							</Carousel.Caption>
+						{this.state.projects.map (project => {
+							return (
+								<Carousel.Item>
+									<a href={project.href}>
+									<img
+									className="d-block slidePic"
+									src={project.photo}
+									alt={project.alt}
+									/>
+									</a
+									>
+										<div></div>
+										<Carousel.Caption>
+											<h3>{project.title}</h3>
+											<p>{project.description}</p>
+										</Carousel.Caption>
 
-						</Carousel.Item>
+								</Carousel.Item>
+								)}
+							)}
 
 					</Carousel>
 
-					{/* <Carousel>
+					</Container>
 
-						{this.state.projects.map (project => {
-							return (
-								<Carous
-								href={project.href}
-								image={project.photo}
-								alt={project.alt}
-								title={project.title}
-								description={project.description}
-								/>
-							)
-						}
-					)}
-
-					</Carousel> */}
-
-				</Container>
 			</div>
 		)
 	}
 }
+
+				
+
+						{/* <ProjectList>
+							{this.state.projects.map (project => {
+								return (
+									<CarouselListItem
+									href={project.href}
+									image={project.photo}
+									alt={project.alt}
+									title={project.title}
+									description={project.description}
+									/>
+									)
+								}
+							)}
+						</ProjectList> */}
+					
+
+				
+
+	
 
 export default Projects

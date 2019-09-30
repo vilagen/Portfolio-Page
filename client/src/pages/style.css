@@ -16,7 +16,9 @@
 }
 
 .slidePic {
-    margin: auto
+    margin: auto;
+    height: 200px;
+    margin-top: 20px;
 }
 
 .carousel-item {
