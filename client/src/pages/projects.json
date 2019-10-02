@@ -20,29 +20,32 @@
 	},
 
 	{
-		"id": 1,
-		"href": "https://guarded-wildwood-51320.herokuapp.com/",
-		"photo": "/photos/friendfinder.PNG",
+		"id": 3,
+		"href": "https://vilagen-nytscrape.herokuapp.com/",
+		"photo": "/photos/newscrapper.png",
 		"alt": "News Scrapper",
-		"title": "Friend Finder",
-		"description": "A website to rate how compatible you are based on a quiz"
+		"title": "News Scrapper",
+		"description": "This project was made to learn about how to scrape a website, and save such information on a Mongo DB.",
+		"description2": "This project utilizes Mongoose to create a NoSQL database, with two collections. One for the articles being pulled, and other for comments."
 	},
 
 	{
-		"id": 1,
-		"href": "https://guarded-wildwood-51320.herokuapp.com/",
-		"photo": "/photos/friendfinder.PNG",
+		"id": 4,
+		"href": "https://vilagen-googlebooks.herokuapp.com/",
+		"photo": "/photos/bookSearch.png",
 		"alt": "Google Books",
-		"title": "Friend Finder",
-		"description": "A website to rate how compatible you are based on a quiz"
+		"title": "Google Books",
+		"description": "Search and save books that interest you, which includes photos of the cover, a synopsis, and link to buy the book.",
+		"description2": "Googlebooks is a full stack MERN project. A NoSQL database was used to save results, with axois being used in the backend to make the API call to googlebooks."
 	},
 
 	{
-		"id": 1,
-		"href": "https://guarded-wildwood-51320.herokuapp.com/",
-		"photo": "/photos/friendfinder.PNG",
+		"id": 5,
+		"href": "https://ducklink.herokuapp.com",
+		"photo": "/photos/ducklink.PNG",
 		"alt": "Duck Link",
-		"title": "Friend Finder",
-		"description": "A website to rate how compatible you are based on a quiz"
+		"title": "Duck Link",
+		"description": "A website to play games with your own customized duck avatar.",
+		"description2": "This application allows one to create their own username, then create a duck of their own to play games. This was a group project, using the MERN stack."
 	}
 ]

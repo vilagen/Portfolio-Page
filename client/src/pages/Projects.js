@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Container, Carousel } from "react-bootstrap";
+import { Container, Carousel, Row } from "react-bootstrap";
 import Nav from "../components/Navbar";
 import Title from "../components/Title";
-import { ProjectList, CarouselListItem } from "../components/Carousel";
+import { ProjectList, ProjectListItem } from "../components/Carousel";
 import projects from "./projects.json";
 import "./style.css"
 
@@ -49,7 +49,32 @@ class Projects extends Component {
 
 					</Carousel>
 
-					</Container>
+				</Container>
+
+				<div className="mt-5"></div>
+
+				<div>
+				
+					<ProjectList className>
+
+						{this.state.projects.map (project => {
+							return (
+
+								<ProjectListItem
+								key={project.id}
+								href={project.href}
+								image={project.photo}
+								alt={project.alt}
+								title={project.title}
+								description2={project.description2}>
+								</ProjectListItem>
+
+							)
+						})}
+
+					</ProjectList>
+
+				</div>
 
 			</div>
 		)

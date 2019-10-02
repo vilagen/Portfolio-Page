@@ -1,59 +1,49 @@
 import React from "react";
-import { Carousel } from "react-bootstrap"
-// import "./style.css"
+import { Carousel, Container, Row, Col } from "react-bootstrap"
+import "./style.css"
 
 export function ProjectList({children}) {
-	return <Carousel className="list-group">{children}</Carousel>;
+	return <ul className="list-group">{children}</ul>;
 }
 
+
 // info will come from a JSON file
-export function CarouselListItem({
+export function ProjectListItem({
 	href,
 	image,
 	alt,
 	title,
-	description
-	}) 
-
-	{
+	description2
+}) {
 		return (
-			
-			<Carousel.Item>
-				<a href={href}>
-				<img
-				className="d-block slidePic"
-				src={image}
-				alt={alt}
-				/>
-				</a>
 
-					<Carousel.Caption>
-						<h3>{title}</h3>
-						<p>{description}</p>
-					</Carousel.Caption>
+			<Container>
+				<div className="border my-2 bg-white">
 
-			</Carousel.Item>
+					<div className="d-flex justify-content-between">
+						<h4 className="m-3">{title}</h4>
+							<section>
+		
+								<a className="btn btn-primary" 
+								href={href}>Link</a>
+	
+							</section>    
+					</div>
+		
+					<Row>
+		
+						<Col xs={4} sm={2}>
+							<img className="test m-3" src={image} alt={alt} />
+						</Col>
+		
+						<Col xs={8} sm={10}>
+							<p>{description2}</p>
+						</Col>
+		
+					</Row>
 
-	)
-}
+				</div>
 
-				{/* <Carousel className="bg-dark">
-
-						<Carousel.Item>
-						<a href="https://guarded-wildwood-51320.herokuapp.com/">
-						<img
-						className="d-block slidePic"
-						src="/photos/friendfinder.PNG"
-						alt="Friend Finder"
-						/>
-						</a
-						>
-							<div></div>
-							<Carousel.Caption>
-								<h3>Friend Finder</h3>
-								<p>A website to rate how compatible you are based on a quiz</p>
-							</Carousel.Caption>
-
-						</Carousel.Item> */}
-
-					{/* </Carousel> */}
+			</Container>
+		)
+	}
