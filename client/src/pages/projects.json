@@ -39,7 +39,7 @@
 		"photo": "/photos/bookSearch.png",
 		"alt": "Google Books",
 		"title": "Google Books",
-		"description": "Search and save books that interest you, which includes photos of the cover, a synopsis, and link to buy the book.",
+		"description": "Search and save books that interest you, with a link to buy the book.",
 		"description2": "Googlebooks is a full stack MERN project. A NoSQL database was used to save results, with axois being used in the backend to make the API call to googlebooks, then to call the user data for what specific books have been saved. This page was also built using React."
 	},
 

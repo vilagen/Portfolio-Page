@@ -63,6 +63,7 @@ class Projects extends Component {
 								<ProjectListItem
 								key={project.id}
 								href={project.href}
+								github={project.github}
 								image={project.photo}
 								alt={project.alt}
 								title={project.title}
@@ -76,31 +77,14 @@ class Projects extends Component {
 
 				</div>
 
+			<footer class="footer container-fluid bg-dark text-light">
+				<p class="text-center">Copyright 2019</p>
+			</footer>  
+
 			</div>
 		)
 	}
 }
-
-				
-
-						{/* <ProjectList>
-							{this.state.projects.map (project => {
-								return (
-									<CarouselListItem
-									href={project.href}
-									image={project.photo}
-									alt={project.alt}
-									title={project.title}
-									description={project.description}
-									/>
-									)
-								}
-							)}
-						</ProjectList> */}
-					
-
-				
-
 	
 
 export default Projects

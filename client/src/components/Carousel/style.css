@@ -2,3 +2,13 @@
     width: 100%;
     height: auto;
 }
+
+#border {
+    width: 95%;
+    margin: auto;
+    border-top: 2px solid
+}
+
+#squareBorder {
+    border: double
+}
