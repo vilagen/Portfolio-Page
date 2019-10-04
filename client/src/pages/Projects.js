@@ -35,7 +35,7 @@ class Projects extends Component {
 									src={project.photo}
 									alt={project.alt}
 									/>
-									</a
+									</a>
 									>
 										<div></div>
 										<Carousel.Caption>
