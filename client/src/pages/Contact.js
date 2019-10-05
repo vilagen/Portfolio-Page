@@ -2,17 +2,18 @@ import React, { Component } from "react";
 import { Container, Form, Button, InputGroup, FormControl } from "react-bootstrap";
 import Nav from "../components/Navbar";
 import Title from "../components/Title";
+import Input from "../components/Input"
 import "./style.css"
 
 class Contact extends Component {
 
 	state = {
-		eName: "",
+		name: "",
 		email: "",
 		message: "",
-	}
+	};
 
-	handleInputChange = event => {
+	handleChange = event => {
 		const { name, value } = event.target;
 		this.setState({
 			[name]: value
@@ -21,24 +22,13 @@ class Contact extends Component {
 		console.log(this.state.eName)
 	};
 
-	// handleInputChangeEmail = event => {
-	// 	const { name, value } = event.target;
-	// 	this.setState({
-	// 		[name]: value
-	// 	});
-	// 	console.log(value)
-	// 	console.log(this.state.email)
-	// };
-
-	// handleInputChangeMessage = event => {
-	// 	const {name, value} = event.target;
-	// 	this.setState({
-	// 		[name]: value
-	// 	});
-	// 	console.log(value)
-	// 	console.log(this.state.message)
-	// }
-
+	submitEmail = (name, email, message) => {
+		const link = `mailto:davhart85@gmail.com`
+		+ `?cc=${email}`
+		+ `&subject=` + encodeURIComponent(`Profile Email`)
+		+ `&body=` + encodeURIComponent(`Hello, my name is ${name}.\n\n${message}`);
+		window.location.href = link
+	}
 
     render() {
         return (
@@ -49,43 +39,43 @@ class Contact extends Component {
 
                 <Container>
 
-									<Form>
-
-									<InputGroup className="mb-3">
-    <InputGroup.Prepend>
-      <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-    </InputGroup.Prepend>
-    <FormControl
-      placeholder="Username"
-      aria-label="Username"
-			aria-describedby="basic-addon1"
-			value={this.state.eName}
-			onChange={this.handleInputChange}
-    />
-  </InputGroup>
-
+									<Form
+									onSubmit={this.submitEmail}>
 
 										<Form.Group>
 											<Form.Label><h5>Your Name</h5></Form.Label>
 											<Form.Control 
 											type="text"
-											onChange={this.handleInputChange}
-											value={this.state.eName}
+											onChange={ (event) => {this.setState({name: event.target.value}); console.log(this.state.name)} }
 											/>
 										</Form.Group>
 
 										<Form.Group>
 											<Form.Label><h5>Email</h5></Form.Label>
-											<Form.Control type="email"  id="eMail" />
+											<Form.Control 
+											type="email"
+											onChange={ (event) => {this.setState({email: event.target.value}); console.log(this.state.email)} }
+											/>
 										</Form.Group>
 
 										<Form.Group>
 											<Form.Label><h5>Message</h5></Form.Label>
-											<textarea class="form-control" id="eMessage" rows="3"></textarea>
+											<textarea 
+											className="form-control"
+											id="eMessage" 
+											rows="3"
+											value={this.state.message}
+											onChange={ (event) => {this.setState({message: event.target.value}); console.log(this.state.message)} }>
+											</textarea>
 										</Form.Group>
 
-										<div class="d-flex flex-row-reverse">
-											<Button variant="primary" className="border" type="submit" id="eSubmit">Submit</Button>
+										<div className="d-flex flex-row-reverse">
+											<Button variant="primary" className="border" 
+											type="submit" 
+											id="eSubmit"
+											onClick={() => this.submitEmail(this.state.name, this.state.email, this.state.message)}>
+											Submit
+											</Button>
 										</div>
 
 									</Form>
