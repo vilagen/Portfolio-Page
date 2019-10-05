@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Carousel, Row } from "react-bootstrap";
+import { Container, Carousel } from "react-bootstrap";
 import Nav from "../components/Navbar";
 import Title from "../components/Title";
 import { ProjectList, ProjectListItem } from "../components/Carousel";

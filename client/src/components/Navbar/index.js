@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Dropdown, DropdownButton, Button } from 'react-bootstrap';
+import { Navbar, Container, Dropdown, DropdownButton } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 
 export default function Nav() {   
