@@ -11,7 +11,7 @@ class Projects extends Component {
 		projects
 	}
 
-	componentDidMount() {
+	componentWillMount() {
 		console.log(this.state.projects)
 	}
 
