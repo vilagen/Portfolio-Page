@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Dropdown, DropdownButton } from 'react-bootstrap';
+import { LinkContainer } from "react-router-bootstrap";
 
 export default function Nav() {   
 return (
@@ -9,9 +10,9 @@ return (
         <a className="navbar-brand" href="/">David Hart</a>
 
         <DropdownButton variant="dark" title="Portolio">
-          <Dropdown.Item href="/">Home</Dropdown.Item>
-          <Dropdown.Item href="/">Projects</Dropdown.Item>
-          <Dropdown.Item href="/">Contact</Dropdown.Item>
+          <LinkContainer to="/"><Dropdown.Item>Home</Dropdown.Item></LinkContainer>
+          <LinkContainer to="/projects"><Dropdown.Item>Projects</Dropdown.Item></LinkContainer>
+          <LinkContainer to="/contact"><Dropdown.Item>Contact</Dropdown.Item></LinkContainer>
         </DropdownButton>
     
       </Container>

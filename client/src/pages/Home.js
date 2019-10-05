@@ -46,14 +46,19 @@ class Home extends Component {
 								Master's in Business Administration with a focus of Human Resources. However, my interests started to turn more
 								towards IT shortly before being done my Master's program. At first it was for networking, but eventually moved
 								on towards programming instead, which led me towards learning web development. My current hobbies outside of 
-								work and class includes hiking, karaoke, playing some video games, and at times trampoline dodgeball. 
+								work and class includes hiking, karaoke, and at times trampoline dodgeball. 
 					
 								{"\n"}
 								{"\n"}
 							
-								On this page you will find a link to show projects I have worked on that have helped me learn the content needed
-								towards being a full stack developer. You can use this site to also reach out to me as well via email. Thank you 
-								for taking the time to read my bio and check this page.
+								On this page you will find a link to show some of the projects I have worked on that have helped me become a
+								full stack developer. You can view the rest of my projects on Github. You can use this site to also reach out 
+								to me. Thank you for taking the time to read my bio and check this page.
+
+								{"\n"}
+								{"\n"}
+
+								Email: davhart85@gmail.com
 		
 						</p>
 	
