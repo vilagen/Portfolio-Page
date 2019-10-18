@@ -9,7 +9,7 @@ return (
 
         <LinkContainer to="/"><Navbar.Brand>David Hart</Navbar.Brand></LinkContainer>
 
-        <DropdownButton variant="dark" title="Portolio">
+        <DropdownButton variant="dark" title="Portfolio">
           <LinkContainer to="/"><Dropdown.Item>Home</Dropdown.Item></LinkContainer>
           <LinkContainer to="/projects"><Dropdown.Item>Projects</Dropdown.Item></LinkContainer>
           <LinkContainer to="/contact"><Dropdown.Item>Contact</Dropdown.Item></LinkContainer>
