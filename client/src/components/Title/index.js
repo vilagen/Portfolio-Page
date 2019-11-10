@@ -13,7 +13,7 @@ export default function Title({
 		</Container>
 		<div className="d-flex justify-content-center">
 		<a className="btn btn-primary btn-lg my-2 mx-4" href="https://github.com/vilagen" id="gitLink"><span class="fab fa-github pr-2"></span>Github</a>
-        	<a className="btn btn-primary btn-lg my-2 mx-4" href="www.linkedin.com/in/david-addison-hart" id="linkedInLink"><span class="fab fa-linkedin"></span> LinkedIn</a>
+        	<a className="btn btn-primary btn-lg my-2 mx-4" href="http://www.linkedin.com/in/david-addison-hart" id="linkedInLink"><span class="fab fa-linkedin"></span> LinkedIn</a>
 		</div>
 		</div>
 	)
