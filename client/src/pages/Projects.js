@@ -77,8 +77,7 @@ class Projects extends Component {
 
 				</div>
 
-			<footer class="footer container-fluid bg-dark text-light">
-				<p class="text-center">Copyright 2019</p>
+			<footer class="footer container-fluid bg-dark text-light d-flex justify-content-center">
 			</footer>  
 
 			</div>

@@ -11,7 +11,9 @@ class Home extends Component {
 				<div>
 				<Nav></Nav>
 				<Title
-				name="About Me"></Title>
+				name="About Me">					
+				</Title>
+				
 				<Container className="bgLightGray">
 					<div class = "row col-md-12">
 
@@ -65,8 +67,8 @@ class Home extends Component {
 					</div>
 				</Container>
 
-				<footer class="footer container-fluid bg-dark text-light">
-					<p class="text-center">Copyright 2019</p>
+				<footer class="footer container-fluid bg-dark text-light d-flex justify-content-center">
+
 				</footer>  
 
 				</div>
