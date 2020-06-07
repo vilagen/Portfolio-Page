@@ -1,39 +1,28 @@
 [
-  {
+	{
 		"id": 1,
-		"href": "https://vilagen-seqburger.herokuapp.com/",
-		"github": "https://github.com/vilagen/sequelizedBurger",
-		"photo": "/photos/makeABurger.PNG",
-		"alt": "Eat a Burger",
-		"title": "Eat a Burger",
-		"description": "A website where a user gets to create a burger, then eat it.",
-		"description2": "This project was done to learn how to apply an SQL database to our website. This uses sequelize to create the SQL models. When a user types a burger name, it is created into the database, then when 'eaten' a value is updated, putting the burger in another bracket. This site is also using handlebars to move the burgers around."
+		"href": "https://bulletboardnews.herokuapp.com/",
+		"photo": "/photos/bulletboard.png",
+		"github": "https://github.com/vilagen/Scrap",
+		"alt": "BulletBoard",
+		"title": "Bullet Board",
+		"description": "A page made that pulls news articles from various sources.",
+		"description2": "A page made that pulls news articles from different sources using NewsAPI. Users can create their own profile to save their own articles, and uses json webtokens and redis to help verify a user login. This page also uses React.js and Bootstrap to create the site's layout, along with SQL (Postgres) to save user data. Is mobile responsive. The application was made entirely by me."
 	},
 
 	{
 		"id": 2,
-		"href": "https://musicluster.herokuapp.com/",
-		"photo": "/photos/musiCluster.PNG",
-		"github": "https://github.com/lucasmdmartins/musicluster",
-		"alt": "MusiCluster",
-		"title": "MusiCluster",
-		"description": "A team full stack project. Make a profile create your own list of albums.",
-		"description2": "A group project using full stack development. Using login authentication (Passport.js), users find music albums, save it to their profile (POST) and then can see what albums they have saved in their profile (GET)."
+		"href": "https://ducklink.herokuapp.com",
+		"github": "https://github.com/JustinConforti/DuckLink",
+		"photo": "/photos/ducklink.PNG",
+		"alt": "Duck Link",
+		"title": "Duck Link",
+		"description": "A website to play games with your own customized duck avatar.",
+		"description2": "This application allows one to create their own username, then create a duck of their own to play games. This was a group project, using the MERN stack. Responsibilities included creating the registration routes, models, and controllers, making sure password was hashed with bcrypt, and bug fixes as we were merging updates to Master branch."
 	},
 
 	{
 		"id": 3,
-		"href": "https://vilagen-nytscrape.herokuapp.com/",
-		"github": "https://github.com/vilagen/newsScraping",
-		"photo": "/photos/newscrapper.png",
-		"alt": "News Scrapper",
-		"title": "News Scrapper",
-		"description": "This project was made to learn about how to scrape a website, and save such information on a Mongo DB.",
-		"description2": "This project utilizes Mongoose to create a NoSQL database, with two collections. One for the articles being pulled, and other for comments."
-	},
-
-	{
-		"id": 4,
 		"href": "https://vilagen-googlebooks.herokuapp.com/",
 		"github": "https://github.com/vilagen/googlebooks",
 		"photo": "/photos/bookSearch.png",
@@ -44,13 +33,25 @@
 	},
 
 	{
+		"id": 4,
+		"href": "https://musicluster.herokuapp.com/",
+		"photo": "/photos/musiCluster.PNG",
+		"github": "https://github.com/lucasmdmartins/musicluster",
+		"alt": "MusiCluster",
+		"title": "MusiCluster",
+		"description": "A team full stack project. Make a profile create your own list of albums.",
+		"description2": "A group project using full stack development. Using login authentication (Passport.js), users find music albums, save it to their profile (POST) and then can see what albums they have saved in their profile (GET)."
+	},
+
+  {
 		"id": 5,
-		"href": "https://ducklink.herokuapp.com",
-		"github": "https://github.com/JustinConforti/DuckLink",
-		"photo": "/photos/ducklink.PNG",
-		"alt": "Duck Link",
-		"title": "Duck Link",
-		"description": "A website to play games with your own customized duck avatar.",
-		"description2": "This application allows one to create their own username, then create a duck of their own to play games. This was a group project, using the MERN stack. Responsibilities included creating the registration routes, models, and controllers, making sure password was hashed with bcrypt, and bug fixes as we were merging updates to Master branch."
+		"href": "https://vilagen-seqburger.herokuapp.com/",
+		"github": "https://github.com/vilagen/sequelizedBurger",
+		"photo": "/photos/makeABurger.PNG",
+		"alt": "Eat a Burger",
+		"title": "Eat a Burger",
+		"description": "A website where a user gets to create a burger, then eat it.",
+		"description2": "This project was done to learn how to apply an SQL database to our website. This uses sequelize to create the SQL models. When a user types a burger name, it is created into the database, then when 'eaten' a value is updated, putting the burger in another bracket. This site is also using handlebars to move the burgers around."
 	}
+
 ]
